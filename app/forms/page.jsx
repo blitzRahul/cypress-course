@@ -36,10 +36,10 @@ export default function FormsPage(){
     const [inputValue, setInputValue] = useState('')
     const [subMessage, setSubMessage] = useState('')
     return (
-        <main className={styles.main}>
+        <main data-test="subscribe-form" className={styles.main}>
             <h1 className={styles.header}>Testing Forms</h1>
             <ItemsAccordion items={items} />
-            <TextField 
+            <TextField
             className={styles.input} 
             label="Email" 
             variant="filled" 
